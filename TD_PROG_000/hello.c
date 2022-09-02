@@ -15,6 +15,7 @@ int main(int argc, char* argv[]) {
 
 	printf("\nHello JUNIA ISEN !\n");
 	//modif2
+	if (1) { printf("T"); }
 
 
 
