@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 	//modif2
 	
 	if (1) { printf("T"); }
-	printf("master");
+	printf("master is the best");
 
 
 
