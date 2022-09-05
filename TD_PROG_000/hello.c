@@ -14,8 +14,9 @@ int main(int argc, char* argv[]) {
 
 
 	printf("\nHello JUNIA ISEN !\n");
-	printf("test versioning\n");
-	printf("supplement");
+	printf("test\n");
+	printf("test\n");
+	printf("test\n");
 
 
 	return(EXIT_SUCCESS);
