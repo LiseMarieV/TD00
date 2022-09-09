@@ -1,5 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <stdlib.h> //définition de EXIT-SUCCESS (et autres)
+#include <stdio.h> // pour utiliser printf /scanf et autres entréées sorties
+#include <locale.h>// pour utiliser des accents
 
 
 // TD_PROG_000
@@ -11,10 +12,43 @@
 
 int main(int argc, char* argv[]) {
 
+	setlocale(LC_ALL,"fr-FR");// pour pouvoir afficher des accents et symboles français
+
+	printf("\nHello\t JUNIA ISEN !\n");
+	printf("\nBienvenue à JUNIA ISEN !\n");
+	printf("7+2 = %d\n", 7 + 2);
+	printf("7-2 = %d\n", 7 - 2);
+	printf("7%%2 = %d\n", 7 % 2); // utiliser %% pour afficher % ; modulo
+	printf("7*2 = %d\n", 7 * 2);
+	printf("7/2 = %d\n", 7 / 2); // division entre deux entier donc division entière
+	printf("7.0/2 = %f\n", 7. / 2); // division avec au moins un nombre à virgule donc division à virgule
+
+	printf("7&2 = %d\n", 7 & 2); // ET bit à bit : à appliquer pour chaque colonne sur la forme binaire
+	printf("7|2 = %d\n", 7 | 2); // OU bit à bit
+	printf("10 & 6 = %d\n", 10 & 6);
+	printf("10 | 6 = %d\n", 10 | 6);
+	printf("7&&2 = %d\n", 7 && 2); // ET logique entre deux valeurs booléennes
+	printf("7||2 = %d\n", 7 || 2); // OU logique entre deux valeurs booléenne
+	printf("0&&2 = %d\n", 0 && 2);
+	printf("0||2 = %d\n", 0 || 2);
+
+	printf("7<<3 = %d\n", 7 << 3); // décalage à gauche d'un nombre au format bianire : multiplier par 2
+	printf("7>>2 = %d\n", 7 >> 2); // décalage à droite : diviser par 2
+	printf("un caractère seul : %c et une chaine : %s \n",'c', "plusieurs caracteres");
+	printf("une chaine de caractères : %15s \n", "la chaine");// utiliser les guillemets
+	printf("%.4f", 1 / 3.);
+	
+	return(EXIT_SUCCESS);
+}
 
 
-	printf("\nHello JUNIA ISEN !\n");
-	printf("7 + 2 = %d \n",7 + 2);
+
+
+
+
+
+
+/*printf("7 + 2 = %d \n", 7 + 2);
 	printf("7 * 2 = %d \n", 7 * 2);
 	printf("7 - 2 = %d \n", 7 - 2);
 	printf("7 / 2 = %d \n", 7 / 2); // division de nombres entier -> division entière (quotient)
@@ -27,12 +61,7 @@ int main(int argc, char* argv[]) {
 	printf("7 | 2 = %d \n", 7 | 2); // opération OU bit à bit
 	printf("7 && 2 = %d \n", 7 && 2); //opération ET logique (entre deux valeurs logiques)
 	printf("7 || 2 = %d \n", 7 || 2); // opération OU logique
-	
-	printf("0 & 2 = %d \n", 0 & 2);
-	printf("8 & 2 = %d \n", 8 & 2);
-	printf("0 | 2 = %d \n", 0 | 2);
-	printf("0 && 2 = %d \n", 0 && 2);
-	printf("0 || 2 = %d \n", 0 || 2);
-	
-	return(EXIT_SUCCESS);
-}
+	printf("un caractère : %c \n", 't'); // afficher un caractère seul . attention utiliser apostrophe
+	printf("une chaine de caractères : %15s \n", "la chaine");// utiliser les guillemets
+	printf("%.4f", 1 / 3.);
+	*/
